@@ -81,10 +81,18 @@
         "./scripts/chocolatey.bat"
       ],
       "type": "windows-shell"
+    },
+    {
+      "execute_command": "{{ .Vars }} cmd /c \"{{ .Path }}\"",
+      "remote_path": "/tmp/script.bat",
+      "scripts": [
+        "./scripts/chocopacks.bat"
+      ],
+      "type": "windows-shell"
     }
   ],
   "variables": {
-    "autounattend": "./answer_files/10/Autounattend.xml",
+    "autounattend": "./Autounattend.xml",
     "disk_size": "61440",
     "disk_type_id": "1",
     "headless": "false",
