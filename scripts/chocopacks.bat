@@ -1,8 +1,13 @@
-:: Install all the things (7zip already installed); for example:
-echo "7zip installing"
+:: Ensure C:\Chocolatey\bin is on the path
+set /p PATH=%PATH%;C:\ProgramData\chocolatey\
+echo %PATH%
+
+:: Install all the things; for example:
+:: choco install /y 7zip
+:: choco install /y notepadplusplus
+:: choco install /y boxstarter.winconfig
+
 choco install /y 7zip
-echo "7zip installed"
 choco install /y visualstudio2019community
-echo "visualstudio2019community installed"
 choco install /y rsat
 choco install /y microsoft-office-deployment
