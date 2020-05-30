@@ -13,6 +13,8 @@ The json files are the basis from which packer does its magic.
 windows_10.json: The original file from Stefan Scherer, contains:
 
 	-	Builders for qemu, hyperv, vmware and virtualbox. 
+	-	Has a vagrant post-processor to create a .box file.
+		For vmware to use .box files you need to buy some license. (https://github.com/mechboxes/mech seems to be a workaround, haven't tested it yet).
 	-	Long list of provisioners:
 		-  vm-guest-tools.bat
 		-  enable-rdp.bat
@@ -27,8 +29,6 @@ windows_10.json: The original file from Stefan Scherer, contains:
 		-  compact.bat
 		-  chocolatey.bat
 		-  chocopacks.bat 
-	-	Has a vagrant post-processor to create a .box file.
-		For vmware to use .box files you need to buy some license. (https://github.com/mechboxes/mech seems to be a workaround, haven't tested it yet).
 
 For my adaptation I removed the non vmware builders and the post-processor to just get a .vmx file.
 
