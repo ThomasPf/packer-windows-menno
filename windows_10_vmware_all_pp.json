@@ -78,18 +78,7 @@
         "./scripts/uac-enable.bat",
         "./scripts/dis-updates.bat",
         "./scripts/compact.bat",
-        "./scripts/chocolatey.bat"
-      ],
-      "type": "windows-shell"
-    },
-    {
-      "restart_timeout": "{{user `restart_timeout`}}",
-      "type": "windows-restart"
-    },
-    {
-      "execute_command": "{{ .Vars }} cmd /c \"{{ .Path }}\"",
-      "remote_path": "/tmp/script.bat",
-      "scripts": [
+        "./scripts/chocolatey.bat",
         "./scripts/chocopacks.bat"
       ],
       "type": "windows-shell"
