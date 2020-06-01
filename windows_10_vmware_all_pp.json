@@ -78,19 +78,7 @@
         "./scripts/uac-enable.bat",
         "./scripts/dis-updates.bat",
         "./scripts/compact.bat",
-<<<<<<< HEAD:windows_10_vmware_all_pp.json
-        "./scripts/chocolatey.bat",
-=======
         "./scripts/chocolatey.bat"
-      ],
-      "type": "windows-shell"
-    },
-    {
-      "execute_command": "{{ .Vars }} cmd /c \"{{ .Path }}\"",
-      "remote_path": "/tmp/script.bat",
-      "scripts": [
->>>>>>> parent of b2ef5c5... uploading definitive version:windows_10_menno.json
-        "./scripts/chocopacks.bat"
       ],
       "type": "windows-shell"
     }
