@@ -78,7 +78,8 @@
         "./scripts/uac-enable.bat",
         "./scripts/dis-updates.bat",
         "./scripts/compact.bat",
-        "./scripts/chocolatey.bat"
+        "./scripts/chocolatey.bat",
+        "./scripts/chocopacks.bat",
       ],
       "type": "windows-shell"
     }
